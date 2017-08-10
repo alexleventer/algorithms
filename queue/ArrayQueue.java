@@ -10,17 +10,27 @@ public class ArrayQueue<E> {
   }
 
   public void enqueue(Element e) {
-    if(full())
+    if (full()) {
       throw new IllegalStateException("queue is full");
-    arr[back] = e;
-    back = (back + 1) % arr.length;
+    } else {
+      size++;
+      arr[back] = e;
+      rear++;
+      if (rear == q.length) rear =0;
+    }
   }
 
   public E dequeue() {
-    D element = peek();
-    arr[front] = null;
-    front = (front + 1) % arr.length;
-    return element;
+    if (empty()) {
+      throw new EmptyQueueException();
+    } else {
+      size--;
+      String value = arr[front];
+      arr[front] = null;
+      front++;
+      if (front == arr.length) front =0;
+      return value;
+    }
   }
 
   public boolean empty() {
@@ -32,8 +42,8 @@ public class ArrayQueue<E> {
   }
 
   public boolean peek() {
-    if(empty)
+    if(empty())
       throw new IllegalStateException("cannot peek into empty stack");
-    return arr[size-1];
+    return arr[front];
   }
 }
