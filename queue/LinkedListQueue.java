@@ -35,7 +35,7 @@ public class LinkedListQueue<E> {
     if (head == null) {
       tail = null;
     }
-    return peek();
+    return element;
   }
 
   public E peek() {
