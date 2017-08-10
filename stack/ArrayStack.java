@@ -1,6 +1,6 @@
 public class ArrayStack<E> {
   public final int MAX_SIZE = 10;
-  private Object array;
+  private Object[] array;
   private int top;
 
   public ArrayStack() {
