@@ -25,7 +25,7 @@ public class LinkedListStack {
   }
 
   public boolean empty() {
-    return head == null;
+    return top == null;
   }
 
   public String peek() {
