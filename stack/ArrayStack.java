@@ -20,7 +20,7 @@ public class ArrayStack<E> {
   }
 
   public E push(E element) {
-    if(top === array.length)
+    if(top == array.length)
       throw new IllegalStateException("stack is full");
     array[top] = element;
     top++;
