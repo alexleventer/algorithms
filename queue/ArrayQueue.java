@@ -16,7 +16,7 @@ public class ArrayQueue<E> {
       size++;
       arr[back] = e;
       rear++;
-      if (rear == q.length) rear =0;
+      if (rear == q.length) rear = 0;
     }
   }
 
@@ -28,7 +28,7 @@ public class ArrayQueue<E> {
       String value = arr[front];
       arr[front] = null;
       front++;
-      if (front == arr.length) front =0;
+      if (front == arr.length) front = 0;
       return value;
     }
   }
