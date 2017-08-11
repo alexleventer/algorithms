@@ -24,7 +24,6 @@ public class ArrayStack<E> {
       throw new IllegalStateException("stack is full");
     array[top] = element;
     top++;
-
   }
 
   public E peek() {
