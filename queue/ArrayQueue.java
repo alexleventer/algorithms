@@ -22,7 +22,7 @@ public class ArrayQueue<E> {
 
   public E dequeue() {
     if (empty()) {
-      throw new EmptyQueueException();
+      throw new IllegalStateException("queue is empty");
     } else {
       size--;
       String value = arr[front];
