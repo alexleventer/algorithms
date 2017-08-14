@@ -3,7 +3,7 @@ public static int binarySearch(int[] a, int target) {
   while (left <= right) {
     int mid = (left + right) / 2;
 
-    if(a[mid] == target)
+    if (a[mid] == target)
       return mid;
     else if (a[mid] < target)
       left = mid + 1;
