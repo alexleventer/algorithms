@@ -2,7 +2,7 @@ public static int[] selectionSort(int[] a) {
   int temp, min;
   for (int i = 0; i < a.length - 1; i++) {
     min = i;
-    for (int j = i + 1; j < a.length; i++) {
+    for (int j = i + 1; j < a.length; j++) {
       if (a[j] < a[min])
         min = j;
     }
