@@ -1,3 +1,8 @@
+/*
+ * Alex Leventer
+ * CPSC 5003, Seattle University
+ * This is free and unencumbered software released into the public domain.
+ */
 public class BinarySearchTree {
   private Node root;
 
@@ -36,11 +41,20 @@ public class BinarySearchTree {
     return root == null;
   }
 
+  public void getPreOrderTraversal() {
+    return getPreOrderTraversal(root);
+  }
+
   private void getPreOrderTraversal(Node tree) {
     if (tree != null) {
       System.out.println(tree.value);
       getPreOrderTraversal(tree.left);
       getPreOrderTraversal(tree.right);
+    }
+  }
+
+  public void getInOrderTraversal() {
+    return getInOrderTraversal(root);
   }
 
    private void getInOrderTraversal(Node tree) {
@@ -48,6 +62,11 @@ public class BinarySearchTree {
       getPreOrderTraversal(tree.left);
       System.out.println(tree.value);
       getPreOrderTraversal(tree.right);
+    }
+  }
+
+  public void getPostOrderTraversal() {
+    return getPostOrderTraversal(root);
   }
 
    private void getPostOrderTraversal(Node tree) {
@@ -55,5 +74,6 @@ public class BinarySearchTree {
       getPreOrderTraversal(tree.left);
       getPreOrderTraversal(tree.right);
       System.out.println(tree.value);
+    }
   }
 }
