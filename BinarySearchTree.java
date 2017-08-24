@@ -10,10 +10,10 @@ public class BinarySearchTree {
     root = null;
   }
 
-  public boolean insert(int x) {
+  public Node insert(int x) {
     return insert(int x, root);
   }
-  private void insert(int x, Node tree) {
+  private Node insert(int x, Node tree) {
     if (tree == null)
       return new Node(x, null);
     else if (x < tree.value)
