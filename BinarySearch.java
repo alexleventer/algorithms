@@ -1,4 +1,4 @@
-public static int binarySearch(int[] a, int target) {
+public static int BinarySearch(int[] a, int target) {
   int left = 0, right = a.length -1;
   while (left <= right) {
     int mid = (left + right) / 2;
