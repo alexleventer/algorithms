@@ -28,7 +28,8 @@ public class ArrayQueue<E> {
       String value = arr[front];
       arr[front] = null;
       front++;
-      if (front == arr.length) front = 0;
+      if (front == arr.length)
+        front = 0;
       return value;
     }
   }
@@ -42,7 +43,7 @@ public class ArrayQueue<E> {
   }
 
   public boolean peek() {
-    if(empty())
+    if (empty())
       throw new IllegalStateException("cannot peek into empty stack");
     return arr[front];
   }
