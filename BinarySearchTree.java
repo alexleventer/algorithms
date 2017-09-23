@@ -13,6 +13,7 @@ public class BinarySearchTree {
   public Node insert(int x) {
     return insert(int x, root);
   }
+  
   private Node insert(int x, Node tree) {
     if (tree == null)
       return new Node(x, null);
