@@ -13,4 +13,5 @@ public static int[] SelectionSort(int[] a) {
       a[min] = temp;
     }
   }
+  return a;
 }
