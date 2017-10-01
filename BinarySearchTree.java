@@ -1,8 +1,3 @@
-/*
- * Alex Leventer
- * CPSC 5003, Seattle University
- * This is free and unencumbered software released into the public domain.
- */
 public class BinarySearchTree {
   private Node root;
 
