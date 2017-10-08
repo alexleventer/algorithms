@@ -5,6 +5,7 @@ public class LinearSearch {
         return i;
       }
     }
+    // Target was not found
     return -1;
   }
 }
