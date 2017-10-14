@@ -13,21 +13,21 @@ public class ArrayStack<E> {
   }
 
   public E pop() {
-    if(empty())
+    if (empty())
       throw new EmptyStackException();
     top--;
     return arr[top];
   }
 
   public E push(E element) {
-    if(top == array.length)
+    if (top == array.length)
       throw new IllegalStateException("stack is full");
     array[top] = element;
     top++;
   }
 
   public E peek() {
-    if(empty()) {
+    if (empty()) {
       throw new EmptyStackException();
     }
     return arr[top - 1];
