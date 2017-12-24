@@ -2,7 +2,6 @@ public class RecursiveBinarySearch {
   public static int binarySearch(int[] arr, int key) {
     return binarySearch(arr, 0, arr.length - 1, key);
   }
-
   public static int binarySearch(int[] arr, int lo, int hi, int key) {
     if (lo <= hi) {
       int mid = (lo + hi) / 2;
